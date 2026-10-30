@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <!-- Cobalt Blue to Crimson Red Gradient -->
+    <linearGradient id="nexusGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#e11d48" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Dark Rounded Plate -->
+  <rect width="500" height="500" rx="110" fill="#0f172a" />
+  
+  <!-- Outer Tech Hexagon / Circuit Frame -->
+  <polygon points="250,55 425,155 425,345 250,445 75,345 75,155" fill="none" stroke="#1e293b" stroke-width="14" />
+  <polygon points="250,75 405,165 405,335 250,425 95,335 95,165" fill="none" stroke="url(#nexusGrad)" stroke-width="8" opacity="0.4" />
+
+  <!-- Abstract 'N' & 'G' Nexus Gear Emblem with Glow -->
+  <g filter="url(#glow)">
+    <!-- Left Tech Pillar (Blue) -->
+    <path d="M 160 150 L 220 150 L 220 350 L 160 350 Z" fill="#38bdf8" />
+    <!-- Diagonal Energy Core -->
+    <polygon points="210,150 290,350 240,350 160,150" fill="url(#nexusGrad)" />
+    <!-- Right Tech Pillar & Gear Slash (Crimson) -->
+    <path d="M 280 150 L 340 150 L 340 350 L 280 350 Z" fill="#e11d48" />
+    <!-- Connecting Gamer Chevron -->
+    <path d="M 195 235 L 250 280 L 305 235" fill="none" stroke="#f8fafc" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+</svg>

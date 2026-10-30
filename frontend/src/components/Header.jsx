@@ -35,9 +35,12 @@ export default function Header() {
     <>
       <nav className="navbar">
         {/* Left: Brand Logo */}
-        <Link to="/" className="brand-logo">
-          <span className="blue">NEXUS</span>
-          <span className="red">GEAR</span>
+        <Link to="/" className="brand-logo" style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+          <img src="/favicon.svg" alt="NexusGear Logo" style={{ width: '38px', height: '38px' }} />
+          <div>
+            <span className="blue">NEXUS</span>
+            <span className="red">GEAR</span>
+          </div>
         </Link>
 
         {/* Center/Bottom: Scroll-Activated Navbar Search */}
